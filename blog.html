@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="lexend">
+     <!-- header section -->
+     <div class="sticky top-0">
+        <div class="bg-[#F9F7F3]">
+            <nav class="container mx-auto grid grid-cols-3 py-4 px-2 md:pt-5 md:pb-14">
+                <div>
+                    <button id="btn-home" class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold">Home</button>
+                </div>
+                <div class="flex items-center justify-self-center space-x-1 md:space-x-4 text-[10px] md:text-[20px]">
+                    <img class="h-[50%] md:h-[100%]" src="assets/logo.png" alt="">
+                    <h2 class="font-semibold">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center justify-self-end space-x-1 md:space-x-4 text-[10px] md:text-[20px]">
+                    <img class="w-[20%]" src="assets/coin.png" alt="">
+                    <h2 id="account-amount" class="font-medium">5500 BDT</h2>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>

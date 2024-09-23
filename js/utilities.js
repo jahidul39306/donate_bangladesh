@@ -2,7 +2,7 @@ const accountAmount = document.getElementById('account-amount')
 // const historySection = document.getElementById('history-section')
 
 function validInput(amount) {
-    if (amount < 0 || isNaN(amount)) {
+    if (amount === '' || isNaN(amount) || amount < 1 ) {
         return false
     }
     return true
