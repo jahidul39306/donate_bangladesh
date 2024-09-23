@@ -5,6 +5,7 @@ const donationSection = document.getElementById('donation-section')
 const noakhaliBtn = document.getElementById('btn-noakhali-donate')
 const feniBtn = document.getElementById('btn-feni-donate')
 const quotaBtn = document.getElementById('btn-quota-donate')
+const modal = document.getElementById('my_modal_5')
 
 btnDonation.addEventListener('click', function (event) {
     event.preventDefault()

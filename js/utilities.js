@@ -28,6 +28,7 @@ function addDonation(inpElementId, elementId, type) {
             balance -= amount
             accountAmount.innerText = balance + ' BDT'
             addToHistory(type, amount)
+            modal.showModal()
         }
         else{
             alert('Not available balance. Reduce the donation amount.')

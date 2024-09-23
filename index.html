@@ -82,7 +82,8 @@
                     </p>
                     <input id="input-noakhali" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered input-info w-full text-[10px] md:text-[16px]" />
-                    <button id="btn-noakhali-donate" class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold w-full">Donate Now</button>
+                    <button id="btn-noakhali-donate"
+                        class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold w-full">Donate Now</button>
                 </div>
             </div>
 
@@ -110,7 +111,8 @@
                     </p>
                     <input id="input-feni" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered input-info w-full text-[10px] md:text-[16px]" />
-                    <button id="btn-feni-donate" class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold w-full">Donate Now</button>
+                    <button id="btn-feni-donate"
+                        class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold w-full">Donate Now</button>
                 </div>
             </div>
 
@@ -138,7 +140,8 @@
                     </p>
                     <input id="input-quota" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered input-info w-full text-[10px] md:text-[16px]" />
-                    <button id="btn-quota-donate" class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold w-full">Donate Now</button>
+                    <button id="btn-quota-donate"
+                        class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold w-full">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -153,6 +156,23 @@
                     +0600 (Bangladesh Standard Time)</p>
             </div> -->
         </div>
+
+        <!-- modal section -->
+        <!-- Open the modal using ID.showModal() method -->        
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box text-center space-y-5">
+                <h3 class="text-xl md:text-3xl font-bold">Congrats!</h3>
+                <img class="mx-auto" src="assets/coin.png" alt="">
+                <p class="py-4 text-[#111111B3]">You have donated for Humankind</p>
+                <h3 class="text-lg md:text-xl font-bold">Successfully</h3>
+                <div class="modal-action flex justify-center">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
 
     <!-- footer section -->
