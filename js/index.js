@@ -2,6 +2,9 @@ const btnDonation = document.getElementById('btn-donation')
 const btnHistory = document.getElementById('btn-history')
 const historySection = document.getElementById('history-section')
 const donationSection = document.getElementById('donation-section')
+const noakhaliBtn = document.getElementById('btn-noakhali-donate')
+const feniBtn = document.getElementById('btn-feni-donate')
+const quotaBtn = document.getElementById('btn-quota-donate')
 
 btnDonation.addEventListener('click', function (event) {
     event.preventDefault()
@@ -26,4 +29,22 @@ btnHistory.addEventListener('click', function (event) {
 
     historySection.classList.remove('hidden')
     donationSection.classList.add('hidden')
+})
+
+noakhaliBtn.addEventListener('click', function (event){
+    event.preventDefault()
+    addDonation('input-noakhali', 'noakhali-amount', 'noakhali')
+    document.getElementById('input-noakhali').value = ''
+})
+
+feniBtn.addEventListener('click', function (event){
+    event.preventDefault()
+    addDonation('input-feni', 'feni-amount', 'feni')
+    document.getElementById('input-feni').value = ''
+})
+
+quotaBtn.addEventListener('click', function (event){
+    event.preventDefault()
+    addDonation('input-quota', 'quota-amount', 'quota')
+    document.getElementById('input-quota').value = ''
 })
