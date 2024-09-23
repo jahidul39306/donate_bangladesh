@@ -22,12 +22,13 @@
 </head>
 
 <body class="lexend">
-     <!-- header section -->
-     <div class="sticky top-0">
+    <!-- header section -->
+    <div class="sticky top-0">
         <div class="bg-[#F9F7F3]">
             <nav class="container mx-auto grid grid-cols-3 py-4 px-2 md:pt-5 md:pb-14">
                 <div>
-                    <button id="btn-home" class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold">Home</button>
+                    <button id="btn-home"
+                        class="btn bg-[#B4F461] text-[10px] md:text-[20px] font-semibold">Home</button>
                 </div>
                 <div class="flex items-center justify-self-center space-x-1 md:space-x-4 text-[10px] md:text-[20px]">
                     <img class="h-[50%] md:h-[100%]" src="assets/logo.png" alt="">
@@ -40,6 +41,60 @@
             </nav>
         </div>
     </div>
+
+    <main class="mx-2 md:container md:mx-auto mt-24 space-y-5">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-[12px] md:text-[24px] font-bold">What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+                <p class="text-[10px] md:text-[20px]">DOM is the data representation of the HTML codes. To manipulate or
+                    access the HTML code dynamically
+                    via programming language, DOM is used.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-[12px] md:text-[24px] font-bold">How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+                <p class="text-[10px] md:text-[20px]">There are many ways to select an element from the DOM, but the
+                    popular one is
+                    'document.getElementById('id')'. We can also use 'querySelector()',
+                    'querySelectorAll('.class-name')', 'getElementsByTagName('h1')', and
+                    'getElementsByClassName('class-name')'</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-[12px] md:text-[24px] font-bold">What is event delegation in the context of
+                the DOM, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p class="text-[10px] md:text-[20px]">Event delegation is a design pattern to manage and handle events.
+                    It is used in parent element to listen event of the child element.
+                    When there are similar child element, we can just put event listener to the parent element and can
+                    listen to the target child element
+                    by 'event.target'.
+                </p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-[12px] md:text-[24px] font-bold">How do you manipulate an element's
+                attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p class="text-[10px] md:text-[20px]">We can use 'setAttribute', 'getAttribute', 'removeAttribute'
+                    method's to manipulate attribute. To manipulate style we can use 'element.style.style-property'. If
+                    we are using any css framework, we can use 'element.classList.add('style-property')' and
+                    'element.classList.remove('style-property')'
+                </p>
+            </div>
+        </div>
+
+    </main>
     <script src="js/blog.js"></script>
 </body>
 
